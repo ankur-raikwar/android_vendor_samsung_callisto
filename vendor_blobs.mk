@@ -76,6 +76,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/samsung/callisto/proprietary/bin/hostapd:system/bin/hostapd \
     vendor/samsung/callisto/proprietary/bin/wmiconfig:system/bin/wmiconfig \
+    vendor/samsung/callisto/proprietary/bin/wlan_mac:system/bin/wlan_mac \
+    vendor/samsung/callisto/proprietary/bin/wlan_tool:system/bin/wlan_tool \
     vendor/samsung/callisto/proprietary/wifi/ar6000.ko:system/wifi/ar6000.ko \
     vendor/samsung/callisto/proprietary/wifi/ath6k/AR6003/hw2.0/athtcmd_ram.bin:system/wifi/ath6k/AR6003/hw2.0/athtcmd_ram.bin \
     vendor/samsung/callisto/proprietary/wifi/ath6k/AR6003/hw2.0/athwlan.bin.z77:system/wifi/ath6k/AR6003/hw2.0/athwlan.bin.z77 \
@@ -117,4 +119,11 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/callisto/proprietary/lib/libOmxQcelpHwDec.so:system/lib/libOmxQcelpHwDec.so \
     vendor/samsung/callisto/proprietary/lib/libOmxWmaDec.so:system/lib/libOmxWmaDec.so \
     vendor/samsung/callisto/proprietary/lib/libOmxWmvDec.so:system/lib/libOmxWmvDec.so
+    
+## Network/ RIL
+PRODUCT_COPY_FILES += \
+    vendor/samsung/callisto/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so \
+    vendor/samsung/callisto/proprietary/lib/libsecril-client.so:system/lib/libsecril-client.so \
+    vendor/samsung/callisto/proprietary/lib/libdiag.so:system/lib/libdiag.so \
+    vendor/samsung/callisto/proprietary/bin/qmuxd:system/bin/qmuxd
     
