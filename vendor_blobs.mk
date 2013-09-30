@@ -12,75 +12,42 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-## Bluetooth
-PRODUCT_COPY_FILES += \
-    vendor/samsung/callisto/proprietary/bin/BCM2049B0_BCM20780B0_002.001.022.0170.0174.hcd:system/etc/firmware/BCM2049B0_BCM20780B0_002.001.022.0170.0174.hcd \
-    vendor/samsung/callisto/proprietary/bin/BCM2049B0_BCM20780B0_002.001.022.0170.0174.hcd:system/bin/BCM2049B0_BCM20780B0_002.001.022.0170.0174.hcd
-
 ## Camera
 PRODUCT_COPY_FILES += \
     vendor/samsung/callisto/proprietary/lib/libActionShot.so:system/lib/libActionShot.so \
     vendor/samsung/callisto/proprietary/lib/libarccamera.so:system/lib/libarccamera.so \
     vendor/samsung/callisto/proprietary/lib/libcamera.so:system/lib/libcamera.so \
     vendor/samsung/callisto/proprietary/lib/liboemcamera.so:system/lib/liboemcamera.so \
-    vendor/samsung/callisto/proprietary/lib/libgsl.so:system/lib/libgsl.so \
-    vendor/samsung/callisto/proprietary/lib/libC2D2.so:system/lib/libC2D2.so
 
 
 ## Sensors
 PRODUCT_COPY_FILES += \
     vendor/samsung/callisto/proprietary/lib/hw/sensors.callisto.so:system/lib/hw/sensors.callisto.so \
-    vendor/samsung/callisto/proprietary/lib/hw/gps.msm7x27.so:system/lib/hw/gps.msm7x27.so \
     vendor/samsung/callisto/proprietary/bin/memsicd:system/bin/memsicd
 
 ## Keylayout
 PRODUCT_COPY_FILES += \
-    vendor/samsung/callisto/proprietary/usr/keylayout/AVRCP.kl:system/usr/keylayout/AVRCP.kl \
-    vendor/samsung/callisto/proprietary/usr/keylayout/Generic.kl:system/usr/keylayout/Generic.kl \
-    vendor/samsung/callisto/proprietary/usr/keylayout/Vendor_045e_Product_028e.kl:system/usr/keylayout/Vendor_045e_Product_028e.kl \
-    vendor/samsung/callisto/proprietary/usr/keylayout/Vendor_046d_Product_c216.kl:system/usr/keylayout/Vendor_046d_Product_c216.kl \
-    vendor/samsung/callisto/proprietary/usr/keylayout/Vendor_046d_Product_c294.kl:system/usr/keylayout/Vendor_046d_Product_c294.kl \
-    vendor/samsung/callisto/proprietary/usr/keylayout/Vendor_046d_Product_c299.kl:system/usr/keylayout/Vendor_046d_Product_c299.kl \
-    vendor/samsung/callisto/proprietary/usr/keylayout/Vendor_046d_Product_c532.kl:system/usr/keylayout/Vendor_046d_Product_c532.kl \
-    vendor/samsung/callisto/proprietary/usr/keylayout/Vendor_054c_Product_0268.kl:system/usr/keylayout/Vendor_054c_Product_0268.kl \
-    vendor/samsung/callisto/proprietary/usr/keylayout/Vendor_05ac_Product_0239.kl:system/usr/keylayout/Vendor_05ac_Product_0239.kl \
-    vendor/samsung/callisto/proprietary/usr/keylayout/Vendor_22b8_Product_093d.kl:system/usr/keylayout/Vendor_22b8_Product_093d.kl \
-    vendor/samsung/callisto/proprietary/usr/keylayout/qwerty.kl:system/usr/keylayout/qwerty.kl \
     vendor/samsung/callisto/proprietary/usr/keylayout/sec_jack.kl:system/usr/keylayout/sec_jack.kl \
     vendor/samsung/callisto/proprietary/usr/keylayout/sec_keypad.kl:system/usr/keylayout/sec_keypad.kl \
     vendor/samsung/callisto/proprietary/usr/keylayout/synaptics.kl:system/usr/keylayout/synaptics.kl
     
 ## Keychar
 PRODUCT_COPY_FILES += \
-    vendor/samsung/callisto/proprietary/usr/keychars/Generic.kcm:system/usr/keychars/Generic.kcm \
-    vendor/samsung/callisto/proprietary/usr/keychars/Virtual.kcm:system/usr/keychars/Virtual.kcm \
-    vendor/samsung/callisto/proprietary/usr/keychars/qwerty.kcm:system/usr/keychars/qwerty.kcm \
-    vendor/samsung/callisto/proprietary/usr/keychars/qwerty.kcm.bin:system/usr/keychars/qwerty.kcm.bin \
-    vendor/samsung/callisto/proprietary/usr/keychars/qwerty2.kcm:system/usr/keychars/qwerty2.kcm \
-    vendor/samsung/callisto/proprietary/usr/keychars/qwerty2.kcm.bin:system/usr/keychars/qwerty2.kcm.bin \
     vendor/samsung/callisto/proprietary/usr/keychars/sec_keypad.kcm:system/usr/keychars/sec_keypad.kcm \
     vendor/samsung/callisto/proprietary/usr/keychars/sec_keypad.kcm.bin:system/usr/keychars/sec_keypad.kcm.bin \
 
-## Atheros WiFi
+## Bluetooth
 PRODUCT_COPY_FILES += \
-    vendor/samsung/callisto/proprietary/wifi/ath6k/AR6003/hw2.0/athtcmd_ram.bin:system/wifi/ath6k/AR6003/hw2.0/athtcmd_ram.bin \
-    vendor/samsung/callisto/proprietary/wifi/ath6k/AR6003/hw2.0/athwlan.bin.z77:system/wifi/ath6k/AR6003/hw2.0/athwlan.bin.z77 \
-    vendor/samsung/callisto/proprietary/wifi/ath6k/AR6003/hw2.0/data.patch.bin:system/wifi/ath6k/AR6003/hw2.0/data.patch.bin \
-    vendor/samsung/callisto/proprietary/wifi/ath6k/AR6003/hw2.0/otp.bin.z77:system/wifi/ath6k/AR6003/hw2.0/otp.bin.z77 \
-    vendor/samsung/callisto/proprietary/wifi/ath6k/AR6003/hw2.0/bdata.SD31.bin:system/wifi/ath6k/AR6003/hw2.0/bdata.SD31.bin \
-    vendor/samsung/callisto/proprietary/wifi/ath6k/AR6003/hw2.0/bdata.SD31.bin.01:system/wifi/ath6k/AR6003/hw2.0/bdata.SD31.bin.01 \
-    vendor/samsung/callisto/proprietary/wifi/ath6k/AR6003/hw2.0/bdata.SD31.bin.02:system/wifi/ath6k/AR6003/hw2.0/bdata.SD31.bin.02 \
-    vendor/samsung/callisto/proprietary/wifi/ath6k/AR6003/hw2.0/bdata.SD31.bin.03:system/wifi/ath6k/AR6003/hw2.0/bdata.SD31.bin.03
+    vendor/samsung/callisto/proprietary/bin/BCM2049B0_BCM20780B0_002.001.022.0170.0174.hcd:system/etc/firmware/BCM2049B0_BCM20780B0_002.001.022.0170.0174.hcd \
 
-
+#Wifi / Atheros Board Calibaration
 PRODUCT_COPY_FILES += \
     vendor/samsung/callisto/proprietary/bin/hostapd:system/bin/hostapd \
     vendor/samsung/callisto/proprietary/bin/wmiconfig:system/bin/wmiconfig \
-    vendor/samsung/callisto/proprietary/bin/wlan_mac:system/bin/wlan_mac \
-    vendor/samsung/callisto/proprietary/bin/wlan_tool:system/bin/wlan_tool \
     vendor/samsung/callisto/proprietary/wifi/ar6000.ko:system/wifi/ar6000.ko \
     vendor/samsung/callisto/proprietary/wifi/ath6k/AR6003/hw2.0/athtcmd_ram.bin:system/wifi/ath6k/AR6003/hw2.0/athtcmd_ram.bin \
     vendor/samsung/callisto/proprietary/wifi/ath6k/AR6003/hw2.0/athwlan.bin.z77:system/wifi/ath6k/AR6003/hw2.0/athwlan.bin.z77 \
+    vendor/samsung/callisto/proprietary/wifi/ath6k/AR6003/hw2.0/bdata.SD31.bin:system/wifi/ath6k/AR6003/hw2.0/bdata.SD31.bin \
     vendor/samsung/callisto/proprietary/wifi/ath6k/AR6003/hw2.0/data.patch.bin:system/wifi/ath6k/AR6003/hw2.0/data.patch.bin \
     vendor/samsung/callisto/proprietary/wifi/ath6k/AR6003/hw2.0/otp.bin.z77:system/wifi/ath6k/AR6003/hw2.0/otp.bin.z77
 
@@ -120,10 +87,9 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/callisto/proprietary/lib/libOmxWmaDec.so:system/lib/libOmxWmaDec.so \
     vendor/samsung/callisto/proprietary/lib/libOmxWmvDec.so:system/lib/libOmxWmvDec.so
     
-## Network/ RIL
+    ## Network/ RIL
 PRODUCT_COPY_FILES += \
     vendor/samsung/callisto/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so \
     vendor/samsung/callisto/proprietary/lib/libsecril-client.so:system/lib/libsecril-client.so \
     vendor/samsung/callisto/proprietary/lib/libdiag.so:system/lib/libdiag.so \
     vendor/samsung/callisto/proprietary/bin/qmuxd:system/bin/qmuxd
-    
